@@ -1,0 +1,344 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    color: #000000;
+}
+ul {list-style: none;}
+a {text-decoration: none;}
+.container {width: 1000px;margin: 0 auto;}
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    width: 100%;
+    height: 1000px;
+}
+.main-content {
+    width: 100%;
+    height: 820px;
+    background: #f0f2f5;
+    padding-bottom: 60px;
+}
+.content-top {
+    height: 100%;
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top-account {
+    width: 55%;
+    height: 80%;
+}
+
+/* User */
+.account-logo {
+    width: 100%;
+    height: 10%;
+}
+.account-logo img {
+    height: 78px;
+    object-fit: cover;
+    margin:-20px;
+}
+.account-title {
+    width: 100%;
+    height: 15%;
+}
+.account-title h1 {
+    font-weight: 500;
+}
+.account-title p {
+    color: #606770;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.account-info {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card-info {
+    width: 31.5%;
+    height: 47%;
+    background-color: #fff;
+    border-radius: 8px;
+    /* overflow: hidden; */
+    cursor: pointer;
+    position: relative;
+    border: 1px solid #dddfe2;
+}
+.card-info .img {
+    width: 100%;
+    height: 75%;
+}
+.card-info .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+.card-info .name {
+    width: 100%;
+    height: 25%;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #4b4f56;
+    font-size: 18px;
+}
+.card-info span {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-color: rgb(34, 33, 32);
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    text-align: center;
+    opacity: 0.6;
+    transform: scale(1);
+    transition: transform .2s ease-out;
+}
+.card-info:hover {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transition:box-shadow .75s ease-out, border 1s linear;
+    border: none;
+}
+.card-info:hover span {
+    transition: transform .2s ease-out;
+    transform: scale(1.3);
+    left: -5px;
+    top: -5px;
+    background-color: white;
+    opacity: 1;
+}
+.card-info:hover span i {color: gray;}
+.card-info span i {color: white;}
+.info-4 .img {
+    background-color: #f5f6f7;
+    border-radius: 8px 8px 0 0;
+}
+.info-4 .img i {
+    font-size: 40px;
+    color: #4267B2;
+}
+.info-4 .name p {
+    color: #385898;
+    font-size: 18px;
+}
+
+/* Form Dang Nhap */
+.top-card {
+    width: 40%;
+    height: 80%;
+    display: flex;
+    align-items: flex-end;
+}
+.card-wrapper {
+    width: 100%;
+    height: 90%;
+}
+.card-form {
+    width: 100%;
+    height: 65%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.form-1 {
+    width: 100%;
+    height: 40%;
+    padding-top: 10px;
+    flex-wrap: wrap;
+}
+.form-1 div {
+    width: 364px;
+    height: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.form-1 div:last-child {
+    align-items: flex-start;
+    position: relative;
+}
+.form-1 div:last-child i {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 25px;
+    height: 25px;
+    color: #000000;
+    text-align: center;
+    font-size: 15px;
+    line-height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.form-1 div:last-child i:hover {
+    background-color: #dce1eb;
+}
+.form-1 div > input {
+    width: 368px;
+    height: 53px;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+    font-size:14px;
+    border-radius: 5px;
+    background-color: #e8f0fe;
+}
+.form-1 div > input[type=text]:focus {
+    border: 1px solid #4267B2;;
+}
+.form-1 div > input[type=password]:focus {
+    border: 1px solid #4267B2;;
+}
+.form-2 {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.form-2 button {
+    width: 365px;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    line-height: 48px;
+    font-weight: 800;
+    cursor: pointer;
+    padding: 0 17px;
+    background-color: #4267B2;
+    color: white;
+}
+.form-3 {
+    width: 100%;
+    height: 10%;
+    text-align: center;
+}
+.form-3 a {
+    color: #1877f2;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: underline;
+}
+.form-4 {
+    width: 100%;
+    height: 5%;
+    position: relative;
+}
+.form-4::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 0.2px;
+    background-color: #898F9C;
+    opacity: 0.3;
+}
+.form-5 {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-5 button {
+    width: 180px;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    line-height: 48px;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 0 17px;
+    background-color: #42b72a;
+    color: white;
+}
+.card-title {
+    width: 100%;
+    height: 50%;
+    padding-top: 20px;
+    text-align: center;
+}
+.card-title p a {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+
+/* Footer */
+.main-footer {
+    width: 100%;
+    height: 180px;
+}
+.footer-wrapper {
+    height: 100%;
+}
+.footer-wrapper .top {
+    width: 100%;
+    height: 25%;
+    border-bottom: 1px  solid #d8dce3;
+}
+.footer-wrapper .top ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.footer-wrapper .top ul li {padding-right: 10px;}
+.footer-wrapper .top ul li a {
+    font-size:12px;
+    color: #737373;
+}
+.footer-wrapper .top ul li a:hover {
+    text-decoration: underline;
+}
+.footer-wrapper .top ul li a i {
+    font-size: 16px;
+    color: #737373;
+}
+.footer-wrapper .middle {
+    width: 100%;
+    height: 55%;
+}
+.footer-wrapper .middle ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+}
+.footer-wrapper .middle ul li {padding-right: 10px;}
+.footer-wrapper .middle ul li a {
+    font-size:12px;
+    color: #737373;
+}
+.footer-wrapper .middle ul li a:hover {
+    text-decoration: underline;
+}
+.footer-wrapper .bottom {
+    width: 100%;
+    height: 20%;
+}
+.footer-wrapper .bottom span {
+    font-size: 11px;
+}
